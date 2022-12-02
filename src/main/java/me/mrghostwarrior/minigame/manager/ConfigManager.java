@@ -21,12 +21,12 @@ public class ConfigManager {
 
     public static Location getLobbySpawn(){
         return new Location(
-                Bukkit.getWorld("lobby-spawm.world"),
-                config.getDouble("lobby-spawm.x"),
-                config.getDouble("lobby-spawm.y"),
-                config.getDouble("lobby-spawm.z"),
-                (float) config.getDouble("lobby-spawm.yaw"),
-                (float) config.getDouble("lobby-spawm.pitch"));
+                Bukkit.getWorld("lobby-spawn.world"),
+                config.getDouble("lobby-spawn.x"),
+                config.getDouble("lobby-spawn.y"),
+                config.getDouble("lobby-spawn.z"),
+                (float) config.getDouble("lobby-spawn.yaw"),
+                (float) config.getDouble("lobby-spawn.pitch"));
     }
 
 

@@ -20,12 +20,12 @@ public class ArenaManager {
         for (String str : config.getConfigurationSection("arenas.").getKeys(false)) {
             arenas.add(new Arena(miniGame, Integer.parseInt(str),
                     new Location(
-                            Bukkit.getWorld(config.getString("arenas." + str +".player-spawn.world")),
-                            config.getDouble("arenas." + str +".player-spawn.x"),
-                            config.getDouble("arenas." + str +".player-spawn.y"),
-                            config.getDouble("arenas." + str +".player-spawn.z"),
-                            (float) config.getDouble("arenas." + str +".player-spawn.yaw"),
-                            (float) config.getDouble("arenas." + str +".player-spawn.pitch"))));
+                            Bukkit.getWorld(config.getString("arenas." + str +".world")),
+                            config.getDouble("arenas." + str +".x"),
+                            config.getDouble("arenas." + str +".y"),
+                            config.getDouble("arenas." + str +".z"),
+                            (float) config.getDouble("arenas." + str +".yaw"),
+                            (float) config.getDouble("arenas." + str +".pitch"))));
         }
 
     }

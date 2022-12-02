@@ -1,12 +1,12 @@
 required-players: 2
 minimum-players: 2
 countdown-seconds: 30
-lobby-spawm:
-  world: world
-  x: 0
-  y: 0
-  z: 0
-  yaw: 0
+lobby-spawn:
+  world: 'world'
+  x: 1540
+  y: 99
+  z: -486
+  yaw: 90
   pitch: 0
 arenas:
   0:
