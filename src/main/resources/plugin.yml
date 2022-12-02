@@ -1,0 +1,7 @@
+name: MiniGame
+version: '${project.version}'
+main: me.mrghostwarrior.minigame.MiniGame
+api-version: 1.19
+commands:
+  arena:
+    usage: to leave, join or see the list of arenas
