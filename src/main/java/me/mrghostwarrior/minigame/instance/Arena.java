@@ -74,14 +74,27 @@ public class Arena {
     public String getStateName() {
         GameState state = getState();
         if (state == GameState.RECRUITING){
-            return "&2&RECRUITING";
+            return "&2&lRECRUITING";
         }
         else if (state == GameState.COUNTDOWN) {
             return "&c&lCOUNTDOWN";
         }
         else if (state == GameState.LIVE){
             return "&4&lPROGRESS";
-            }
+        }
+        return state.toString();
+    }
+    public String getstateNameForComponentText() {
+        GameState state = getState();
+        if (state == GameState.RECRUITING){
+            return "§2§lRECRUITING";
+        }
+        else if (state == GameState.COUNTDOWN) {
+            return "§c§lCOUNTDOWN";
+        }
+        else if (state == GameState.LIVE){
+            return "§4§lPROGRESS";
+        }
         return state.toString();
     }
 
